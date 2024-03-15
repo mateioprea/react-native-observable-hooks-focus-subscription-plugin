@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-observable-hooks-react-native-focus-plugin": ["./src/index"]
+      "react-native-observable-hooks-focus-subscription-plugin": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

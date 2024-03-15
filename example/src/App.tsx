@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { useFocusSubscription } from 'react-native-observable-hooks-react-native-focus-plugin';
+import { useFocusSubscription } from 'react-native-observable-hooks-focus-subscription-plugin';
 import { interval } from 'rxjs';
 
 export default function App() {

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-observable-hooks-react-native-focus-plugin",
+  "name": "react-native-observable-hooks-focus-subscription-plugin",
   "version": "1.0.0",
   "description": "Focus Effect observable hook for react native",
   "main": "lib/commonjs/index",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-observable-hooks-react-native-focus-plugin-example",
+    "example": "yarn workspace react-native-observable-hooks-focus-subscription-plugin-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mateioprea/react-native-observable-hooks-react-native-focus-plugin.git"
+    "url": "git+https://github.com/mateioprea/react-native-observable-hooks-focus-subscription-plugin.git"
   },
   "author": "mateioprea <eu@opreamatei.ro> (https://github.com/mateioprea)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mateioprea/react-native-observable-hooks-react-native-focus-plugin/issues"
+    "url": "https://github.com/mateioprea/react-native-observable-hooks-focus-subscription-plugin/issues"
   },
-  "homepage": "https://github.com/mateioprea/react-native-observable-hooks-react-native-focus-plugin#readme",
+  "homepage": "https://github.com/mateioprea/react-native-observable-hooks-focus-subscription-plugin#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
