@@ -1,14 +1,19 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-observable-hooks-react-native-focus-plugin';
+import { useFocusSubscription } from 'react-native-observable-hooks-react-native-focus-plugin';
+import { interval } from 'rxjs';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result] = React.useState<number | undefined>();
+  const count$ = interval(1000);
+  const observer = {
+    next: (value: number) => {
+      console.log(value);
+    },
+  };
 
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  useFocusSubscription(count$, observer);
 
   return (
     <View style={styles.container}>

@@ -5,18 +5,34 @@ Focus Effect observable hook for react native
 ## Installation
 
 ```sh
-npm install react-native-observable-hooks-react-native-focus-plugin
+yarn add react-native-observable-hooks-react-native-focus-plugin @react-navigation/native observable-hooks rxjs
 ```
 
 ## Usage
 
-```js
-import { multiply } from 'react-native-observable-hooks-react-native-focus-plugin';
+```javascript
 
-// ...
+import { useFocusSubscription } from 'react-native-observable-hooks-react-native-focus-plugin';
 
-const result = await multiply(3, 7);
+const MyScreen = () => {
+
+  const count$ = interval(1000)
+  const observer = {
+    next: (value: number) => {
+      console.log(value)
+    },
+  }
+
+  useFocusSubscription(count$, observer)
+
+  return (
+    <View>
+      <Text>My Screen</Text>
+    </View>
+  )
+}
 ```
+
 
 ## Contributing
 
