@@ -2,6 +2,8 @@
 
 Focus Effect observable hook for react native
 
+Inspired from [Observable hooks](https://observable-hooks.js.org/) project
+
 ## Installation
 
 ```sh
